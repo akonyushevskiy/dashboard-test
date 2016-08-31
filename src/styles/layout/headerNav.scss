@@ -1,0 +1,42 @@
+.headerNav {
+    @include position(fixed, 0 0 none 0);
+    padding: 0 25px 0 95px;
+    font-weight: 600;
+    border-bottom: 2px solid #dedede;
+    background: #f7f8f9;
+    z-index: 9;
+
+    .links {
+        font-size: 0;
+        margin-bottom: -2px;
+        white-space: nowrap;
+
+        a {
+            line-height: 56px;
+            border-bottom: 2px solid transparent;
+            display: inline-block;
+            font-size: $fontSize;
+            color: $color_Text;
+
+            &:hover {
+                color: $color-Green;
+            }
+        }
+
+        li {
+            display: inline-block;
+            margin: 0 10px;
+
+            &.active {
+                a {
+                  border-bottom-color: #282f3a;
+                  cursor: default;
+
+                  &, &:hover {
+                    color: $color_Text;
+                  }
+                }
+            }
+        }
+    }
+}

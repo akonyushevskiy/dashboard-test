@@ -1,0 +1,15 @@
+.page-activity {
+
+    .ct-chart {
+        height: calc(100vh - 148px);
+        position: relative;
+        margin-top: 20px;
+
+        > svg {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+}

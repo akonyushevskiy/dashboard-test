@@ -1,0 +1,123 @@
+* { outline: none !important; }
+
+body{
+    color: $color_Text;
+    font-family: $font_Primary;
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Links */
+a {
+    color: $color_Link;
+    text-decoration: none;
+
+    &:hover{
+        color: $color_LinkHover;
+    }
+}
+
+
+/*Заголовки*/
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    margin: $lineHeight/2 0;
+}
+
+h1{
+    font-size: 30px;
+    line-height: 36px;
+}
+h2{
+    font-size: 24px;
+    line-height: 30px;
+}
+h3{
+    font-size: 18px;
+    line-height: $lineHeight;
+}
+h4, h5, h6 {
+    font-size: $fontSize;
+    line-height: $lineHeight;
+}
+
+
+/*Списки*/
+ul, ol{
+    margin: $lineHeight 0;
+
+    li {
+
+    }
+
+    nav & {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li { padding-left: 0; }
+    }
+}
+
+
+/*Таблицы*/
+table{
+    margin: $lineHeight 0;
+
+    caption{}
+    td{}
+    th{}
+}
+
+
+
+/*Элементы*/
+p { margin: 0; }
+p + p { margin-top: $lineHeight; }
+
+blockquote{
+    text-align: center;
+    background: $color_Bg;
+    display: block;
+    margin: 20px 0;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background: #e6cba8;
+}
+
+
+/*Картинки*/
+img {
+    vertical-align: middle;
+}
+
+
+h1, h2, h3, h4, h5, h6, ul, ol, table, p, blockquote {
+    &:first-child { margin-top: 0; }
+    &:last-child { margin-bottom: 0; }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    & + p,
+    & + ul { margin-top: $lineHeight/2; }
+}
+
+p {
+    & + ul,
+    & + ol { margin-top: 10px; }
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+svg {
+    fill: currentColor;
+}

@@ -1,0 +1,50 @@
+.sidebarNav {
+    @include position(fixed, 0 none 0 0);
+    background: $color-sidebarNav;
+    width: 70px;
+    padding: 8px 0;
+    z-index: 10;
+
+    .user {
+        font-size: 14px;
+        color: #fff;
+        font-weight: 700;
+        text-align: center;
+        background: $color-Green;
+        margin: 0 15px;
+        border-radius: 4px;
+        display: block;
+        line-height: 40px;
+    }
+
+    .links {
+        margin-top: 15px;
+
+        a {
+            display: block;
+            height: 48px;
+            text-align: center;
+            line-height: 48px;
+            color: #979ba1;
+
+            svg {
+                width: 20px;
+                height: 20px;
+                vertical-align: middle;
+            }
+
+            &:hover {
+                color: #fff;
+            }
+        }
+
+        li {
+            &.active {
+                a {
+                    color: #fff;
+                    cursor: default;
+                }
+            }
+        }
+    }
+}
