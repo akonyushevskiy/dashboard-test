@@ -31,6 +31,10 @@ class Activity extends Component {
         this.props.fetchActivityData();
     }
 
+    onSelect(){
+        console.log('change filter, lets reload data!');
+    }
+
     render () {
 
         const Chart = this.props.activity.data ? <ChartistGraph data={this.props.activity.data} options={biPolarBarChartOptions} type={'Bar'} /> : <div>Loading...</div>;
