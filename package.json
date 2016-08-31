@@ -1,19 +1,10 @@
 {
-  "name": "redux-webpack-es6-boilerplate",
-  "description": "A starter project for modern React apps with Redux",
+  "name": "testpage",
+  "description": "Test page",
   "version": "0.7.1",
-  "author": "Nick S. Plekhanov <nick.plekhanov@gmail.com>",
+  "author": "Anton Knoyushevskiy <a@konyushevskiy.com>",
   "license": "MIT",
   "keywords": [
-    "react",
-    "redux",
-    "es6",
-    "hmr",
-    "hot",
-    "babel",
-    "webpack",
-    "boilerplate",
-    "starter"
   ],
   "repository": {
     "type": "git",
